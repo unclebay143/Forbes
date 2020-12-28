@@ -1,3 +1,24 @@
+@media(max-width: 400px){
+    .center{
+        position: relative;
+        left: -10px;
+    }
+
+    #search-heading h3{
+        font-size: 32px;
+    }
+
+    #search-box-wrapper{
+        margin-left: 50px;
+        margin-right: 25px;
+    }
+
+    #search-box-wrapper input[type=text]{
+        width: 60%;
+        margin-top: 20vh;
+    }
+    
+}
 
 
 /* media query */
@@ -10,7 +31,6 @@
     .profile-frame{
         margin-top: 20px;
     }
-    
 }
 
 

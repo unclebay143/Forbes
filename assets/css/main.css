@@ -5,6 +5,14 @@ body{
     box-sizing: border-box;
 }
 
+#loader-container{
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
 .nav{
     display:  flex;
     justify-content: space-between;
