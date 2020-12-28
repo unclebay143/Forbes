@@ -1,0 +1,20 @@
+
+
+/* media query */
+@media(max-width: 600px){
+    .center{
+        position: relative;
+        right: 30px;
+    }
+
+    .profile-frame{
+        margin-top: 20px;
+    }
+    
+}
+
+
+
+
+
+
