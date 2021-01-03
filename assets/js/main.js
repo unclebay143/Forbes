@@ -4,7 +4,27 @@ const loaderContainer = document.getElementById('loader-container');
 
 
 // Function that populate each person profile to the DOM
-function get(data) {
+const data =[
+    {
+
+        person: {
+            name: 'Ayodele Samuel',
+        },
+        source: 'software',
+        rank: 1,
+    },
+    {
+
+        person: {
+            name: ' Adewale Adekunle ',
+        },
+        source: 'software',
+        rank: 3,
+    },
+]
+
+function get() {
+    console.log(data);
     let tempInfo = '';
     for (index = 0; index < data.length; index++) {
         tempInfo += 
@@ -29,7 +49,11 @@ function get(data) {
             }
 }
 
+const showProfile = (e) =>{
+    alert(data[e].person.name, e)
+}
 
+loaderContainer.style.display = 'none';
 // Function the list and get response from the API
 const fetchData=()=>{
     var errorOccur =  false;
@@ -57,7 +81,8 @@ const loader=(cb)=>{
 };
 
 // Invoke loading function and pass fetchData function as callback
-loader(fetchData)
+// loader(fetchData)
+get()
 
 
 
