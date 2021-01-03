@@ -1,7 +1,8 @@
 @media(max-width: 400px){
     .center{
         position: relative;
-        left: -10px;
+        left: -40px;
+        font-size: 28px;
     }
 
     #search-heading h3{
@@ -16,6 +17,16 @@
     #search-box-wrapper input[type=text]{
         width: 60%;
         margin-top: 20vh;
+    }
+
+    #search-opener button{
+        font-size: 14px;
+    }
+
+    .errorMessage{
+        display: block;
+        font-size: 16px;
+        text-align: center;
     }
     
 }

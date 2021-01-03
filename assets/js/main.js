@@ -10,7 +10,11 @@ function get(data) {
         tempInfo += 
         `
             <div class="profile-card">
-            <img src=${data[index].thumbnail === undefined ? data[index].squareImage : data[index].thumbnail} alt="${data[index].person.name}" style="width:100%">
+                <img 
+                    src=${data[index].thumbnail === undefined ? data[index].squareImage : data[index].thumbnail} 
+                    alt="${data[index].person.name}" 
+                    style="width:100%"
+                >
                 <div class="profile-info">
                     <h1>${data[index].person.name}</h1>
                     <p class="title">CEO & Founder, ${data[index].source}</p>
@@ -18,22 +22,31 @@ function get(data) {
                 <div style="margin: 24px 0;">
                     <b>Rank</b> <i>${data[index].rank}</i>
                 </div>
-                <p><button>View</button></p>
+                <p><button onClick=showProfile(${index})>View</button></p>
             </div>
                     `
                 board.innerHTML = tempInfo;
             }
 }
 
-// Function that hit and get response from the API
+
+// Function the list and get response from the API
 const fetchData=()=>{
+    var errorOccur =  false;
     fetch('https://forbes400.herokuapp.com/api/forbes400?limit=100')
     .then(response => response.json())
     .then(data =>{
         get(data);
         loaderContainer.style.display = 'none';
     }) 
-    .catch(err => console.error(err));
+    .catch(err =>{
+        console.error(err)
+        loaderContainer.innerHTML = (`
+        <i class="fas fa-spinner fa-pulse"></i>
+        <span class="errorMessage">
+            Error fetching data...check your internet connection
+        </span> `);
+    })
 };
 
 
@@ -45,3 +58,10 @@ const loader=(cb)=>{
 
 // Invoke loading function and pass fetchData function as callback
 loader(fetchData)
+
+
+
+// Search function
+const lookUpName = () =>{
+
+}
