@@ -23,6 +23,8 @@ const data =[
     },
 ]
 
+// populate datail
+
 function get() {
     console.log(data);
     let tempInfo = '';
