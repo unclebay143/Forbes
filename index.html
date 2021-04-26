@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FORBES</title>
+    <!-- CSS STYLES -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/frame.css">
-    <link rel="stylesheet" href="assets/css/media-query.css">
+    <link rel="stylesheet" href="assets/css/frame.css">
+    <link rel="stylesheet" href="assets/css/view-profile.css">
+    <!-- ICON CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 <body>
+    <!-- HEADER SECTION -->
     <header>
         <nav class="nav">
             <div>
@@ -18,10 +22,10 @@
                 </section>
                 <div id="nav-link-wrapper">
                     <section id="nav-link">
-                        <a href="#" class="">Home</a>
-                        <a href="#" class="active">Sales</a>
-                        <a href="#" class="">About</a>
-                        <a href="#" class="">Contact</a>
+                        <a href="#" class="view-more" onclick="window.location.reload()"><i class="fas fa-home"></i> Home</a>
+                        <a href="https://twitter.com/unclebay143" class="active"> <i class="fab fa-twitter"></i> Twitter</a>
+                        <a href="https://www.linkedin.com/in/ayodele-samuel-ayodele-55902819a/" class=""> <i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/ayodele-samuel-ayodele-55902819a/" class=""><i class="fas fa-briefcase"> </i>Hire Me</a>
                     </section>
                 </div>
             </div>
@@ -39,19 +43,37 @@
                 <div id="search-heading">
                     <h3>FORBES</h3>
                 </div>
-                <div id="search-box-wrapper">
-                    <input type="text" placeholder="Search"> <i class="fa fa-search"></i>
+                <div class="">
+                    <span id="result__message"></span>
                 </div>
+                <!-- SEARCH BAR -->
+                <form id="search-box-wrapper" class="search-form">
+                    <input type="text" placeholder="Search" class="lookup__name" autofocus> 
+                    <div class="search-icon-wrapper" onclick="lookUpName()">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </form>
             </section>
         </div>
     </header>
-    
-    <main>
-        <div id="profile-frame-wrapper">
-            <div class="profile-frame" id="d__frame"></div>
-        </div>
+    <!-- HEADER SECTION END -->
+
+
+    <!-- APP SECTION FOR DISPLAYING THE HOME PAGE CARDS -->
+    <main class="app-main">
+        <section id="profiles-frame-wrapper">
+            <div class="profiles-frame" id="d__frame"></div>
+        </section>
+
+        <!-- DEVELOPER NAME -->
+        <section class="mini-footer">
+            <strong class="developer">Designed by <a href="https://twitter.com/unclebay143" target="_blank">Unclebay143</strong>
+        </section>
     </main>
+
+    <!-- JAVASCRIPT FILES -->
     <script src="assets/js/layout.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="./assets/js/singleProfile.js"></script>
 </body>
 </html>

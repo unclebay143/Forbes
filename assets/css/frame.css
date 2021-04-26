@@ -1,14 +1,14 @@
+#profiles-frame-wrapper{
+    margin-top: 10px;
+}
 
-
-.profile-frame {
+.profiles-frame {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* padding: 40px calc((100% - (255px * 3)) / 2); */
 }
-  
+
 .profile-card {
-    /* flex: 0 0 215px; */
     flex: 0 0 120px;
     width: 500px;
     margin: auto;
@@ -19,7 +19,6 @@
 
 .profile-info{
     height: 120px;
-    /* padding: 20px 0px; */
 }
 
 .profile-info h1{
@@ -53,4 +52,33 @@
 
 button:hover, a:hover {
     opacity: 0.7;
+}
+
+.activeResult{
+    width: auto !important;
+}
+
+.circleRadius{
+    border-radius: 75px;
+}
+
+.zeroRadius{
+    border-radius: 0px;
+}
+
+.app-main .mini-footer{
+    text-align: center;
+    margin: 20px 0px;
+    transition: 0.3s ease;
+}
+
+.app-main .developer{
+    transition: 0.3s ease;
+    font-size: 15px;
+    color: #555;
+    text-transform: capitalize;
+}
+
+.app-main .developer a{
+    text-decoration: none;
 }
