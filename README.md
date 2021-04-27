@@ -4,7 +4,7 @@
 ### This Project is built to demonstrate my knowledge of consuming the Restful API and performing robust Business Logic actions using Vanilla JavaScript along with web responsiveness across devices.
 
 
-### Features
+# Features
 
 ## 1. View all the list of all the 100 Billionaires in a card  
 
