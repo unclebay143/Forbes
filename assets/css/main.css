@@ -61,7 +61,7 @@ body{
     color: #cccccc;
     text-decoration: none;
     font-size: 19px;
-    width: 20%;
+    width: 18%;
     padding: 12px 0px 12px 30px;
     transition: 0.3s ease;
 }
@@ -69,11 +69,14 @@ body{
     #nav-link{
     padding: 0px 0px;
     }
-    
+}
+@media(max-width: 600px){
+        
     #nav-link a{
-        width: 50%;
+        width: 40%;
     }
 }
+
 
 #nav-link a:not(:last-child){
     margin-bottom: 30px;
