@@ -173,7 +173,6 @@ body{
     top: 0;
     background: #181716;
     color: #ffffff;
-    transition: 9s ease-out;
     z-index: 999;
 
 }
@@ -194,12 +193,12 @@ body{
     cursor: pointer;
     padding: 12px 20px 13px 20px;
     background: red;
-    position: relative;
+    text-align: center;
+    /* position: relative;
     top: 0.499px;
     display: inline;
     right: 4px;
-    text-align: center;
-    padding: 9px 20px 10px 19px
+    padding: 9px 20px 10px 19px */
 }
 
 .search-icon-wrapper .fa-search.active{
@@ -228,7 +227,7 @@ body{
 }
 
 #search-modal{
-    transition: 0.3s ease;
+    /* transition: 0.3s ease; */
 }
 
 
@@ -248,3 +247,13 @@ body{
     margin-bottom: 10px;
 }
 
+@media (min-width: 900px){
+    #search-box-wrapper .search-icon-wrapper{
+
+        position: relative;
+        top: 0.499px;
+        display: inline;
+        right: 4px;
+        padding: 9px 20px 10px 19px
+    }
+}
