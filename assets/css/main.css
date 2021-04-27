@@ -55,11 +55,6 @@ body{
     padding: 0px 30px;
     }
 }
-@media (max-width: 800px){
-    #nav-link{
-    padding: 0px 0px;
-    }
-}
 
 #nav-link a{
     position: relative;
@@ -69,6 +64,15 @@ body{
     width: 20%;
     padding: 12px 0px 12px 30px;
     transition: 0.3s ease;
+}
+@media (max-width: 800px){
+    #nav-link{
+    padding: 0px 0px;
+    }
+    
+    #nav-link a{
+        width: 50%;
+    }
 }
 
 #nav-link a:not(:last-child){
