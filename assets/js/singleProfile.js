@@ -50,10 +50,10 @@ const displaySingleUserProfile = (profile) =>{
             </section>
             <section class="section-2">
                 <ul>
-                    <li><span>About: </span>${abouts && abouts.map((about)=>about)}</li>
+                    <li><span>About: </span>${abouts ? abouts.map((about)=>about) : "Not Available"}</li>
                 </ul>
                 <ul>
-                    <li><span>Bios: </span>${bios && bios.map((bio)=>bio)}</li>
+                    <li><span>Bios: </span>${bios ? bios.map((bio)=>bio) : "Not Available"}</li>
                 </ul>
                 <li class="source"><span class="source-lead">Source: </span>${source}
                 <strong class="developer source">Designed by <a href="https://twitter.com/unclebay143" target="_blank">Unclebay143</strong>
