@@ -5,7 +5,6 @@ const loaderContainer = document.getElementById('loader-container');
 
 // SHOW LOADER TO THE USER BEFORE DATA IS BEEN FETCHED
 const loader=(callBack)=>{
-    console.log('sss');
     // SHOW SPINNER
     loaderContainer.innerHTML = (`<i class="fas fa-spinner fa-pulse"></i>`);
     // FETCH THE DATA
@@ -73,7 +72,7 @@ function profileCard(data, isSearchResult) {
                 <div style="margin: 24px 0;">
                     <b>Rank</b> <i>${data[index].rank}</i>
                 </div>
-                <p><button onclick="showProfile(${currentUserPosition})" class="view-btn">View</button></p>
+                <p><button onclick="showProfile(${currentUserPosition})" class="view-btn btn_${currentUserPosition}">View</button></p>
             </div>
         `
     }
@@ -84,8 +83,10 @@ function profileCard(data, isSearchResult) {
 // LISTEN FOR ENTER BUTTON
 
 var searchByName = document.querySelector(".lookup__name");
-searchByName.addEventListener("keyup", ()=> {
+searchByName.addEventListener("keyup", (event)=> {
+    event.preventDefault()
     if(event.keyCode === 13){
+        console.log('kkkkkkk');
         lookUpName()
         // document.querySelector(".searchForm").submit();
         return false

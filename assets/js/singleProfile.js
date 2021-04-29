@@ -67,7 +67,7 @@ const displaySingleUserProfile = (profile) =>{
 
 
 const showProfile = (userPosition) =>{
-    const viewBtn = document.querySelector('.view-btn');
+    const viewBtn = document.querySelector(`.btn_${userPosition}`);
     viewBtn.innerHTML = (`<i class="fas fa-spinner fa-pulse"></i>`);
     // console.log(this.userPosition);
     // console.log(userPosition);
